@@ -1,7 +1,13 @@
 class User {
     constructor(email,name){
         this.email = email;
-        this.name;
+        this.name = name;
+    }
+    login(){
+        console.log(this.email, 'just logged in')
+    }
+    logout(){
+        console.log(this.email, 'just logged out')
     }
 }
 
@@ -14,3 +20,6 @@ console.log(userTwo)
 // - create a new empty object {}
 // - sets the value of 'this' to be the new empty object
 // - calls the constructor method
+
+userOne.login()
+userTwo.logout()
